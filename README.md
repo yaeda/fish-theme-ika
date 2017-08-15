@@ -10,7 +10,7 @@ $ fisher yaeda/fish-theme-ika
 
 ## Features
 
-* Current rule of ranked battle hanging out off to the right.
+* Current rule of ranked battle hanging out off to the right. (in Japanese)
 * (All the things you need to know about Git in a glance.)
 * (Previous command status.)
 
