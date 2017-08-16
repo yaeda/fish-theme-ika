@@ -22,8 +22,13 @@ $ fisher yaeda/fish-theme-ika
 
 ## Configuration
 
-Only display the folder name:
+Change language of rule:
+```fish
+  set -g theme_ika_lang 'EN' # 'JP' or 'EN'
 ```
+
+Only display the folder name:
+```fish
   set -g theme_short_path yes
 ```
 
