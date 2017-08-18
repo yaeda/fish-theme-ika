@@ -2,6 +2,9 @@
 A くコ:彡 theme for fish shell.
 Based on [theme-default](https://github.com/oh-my-fish/theme-default) by Bruno Pinto
 
+## Prerequisites
+This theme depends on [jq](https://stedolan.github.io/jq/)
+
 ## Install
 
 ```fish
