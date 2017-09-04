@@ -51,7 +51,7 @@ end
 
 function _update_json_async --argument-names path_timestamp path_schedule path_fes path_salmon path_geso
   set -l api_endpoint_schedule 'https://splatoon2.ink/data/schedules.json'
-  set -l api_endpoint_fes 'https://splatoon2.ink/data/festivals-na.json'
+  set -l api_endpoint_fes 'https://splatoon2.ink/data/festivals.json'
   set -l api_endpoint_salmon 'https://splatoon2.ink/data/salmonruncalendar.json'
   set -l api_endpoint_geso 'https://splatoon2.ink/data/merchandises.json'
   fish -c "curl -s $api_endpoint_schedule > $path_schedule" &
@@ -63,7 +63,7 @@ end
 
 function _can_i_fes --argument-names path_fes
   set -l current_time (date "+%s")
-  command cat $path_fes | jq -e -r ".festivals[] | select(.times.start < $current_time) | select(.times.end > $current_time)" > /dev/null ^ /dev/null
+  command cat $path_fes | jq -e -r "jp.festivals[] | select(.times.start < $current_time) | select(.times.end > $current_time)" > /dev/null ^ /dev/null
 end
 
 function _can_i_work --argument-names path_salmon
